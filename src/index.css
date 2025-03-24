@@ -1,0 +1,234 @@
+@import "tailwindcss";
+* {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* background-color: gray; */
+}
+*::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+body{
+  cursor: default;
+}
+.heading {
+  display: flex;
+  font-size: 65px;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+.select {
+  width: 60%;
+  margin-left: 120px;
+  padding: 10px;
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  letter-spacing: -0vw;
+}
+.select::selection {
+  background-color: #000;
+  color: #fff;
+}
+.featured {
+  padding: 10vw 12vw;
+}
+
+.fheading>h1 {
+  line-height: 1;
+  font-size: 3.5vw;
+  font-weight: 400;
+}
+
+.fheading>h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.fcontent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  margin-top: 5vw;
+}
+
+.fleft {
+  overflow: hidden;
+  width: 45%;
+  height: inherit;
+}
+
+.fleftlem {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fleftlem h1 {
+  font-size: 2.4vw;
+  line-height: 1;
+  margin: 1vw 0;
+}
+
+.fleftlem h4 {
+  font-size: 1.4vw;
+  line-height: 1.5;
+  margin: 1vw 0;
+}
+
+.fright {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 45%;
+  height: inherit;
+}
+
+.fright .images {
+  width: 100%;
+  height: 100%;
+}
+.fright .images img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.fbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.fbutton button {
+  padding: 1.5vw      2.5vw;
+  border-radius: 50px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.dev {
+  line-height: normal;
+}
+
+.devtext {
+  letter-spacing: -0.05vw;
+  width: 70%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .featured {
+    padding: 8vw 10vw;
+  }
+
+  .fheading>h1 {
+    font-size: 4.5vw;
+  }
+
+  .fleftlem h1 {
+    font-size: 3vw;
+  }
+
+  .fleftlem h4 {
+    font-size: 2vw;
+  }
+
+  .fbutton button {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured {
+    text-align: center  ;
+    margin-top: 100px;
+    padding: 6vw 8vw;
+  }
+
+  .fcontent {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .fleft, .fright {
+    width: 100%;
+    height: auto;
+  }
+  .fleftlem{
+    display: none;
+  }
+
+  .fright {
+    justify-content: center;
+    margin-top: 5vw;
+    padding-top: 100px;
+
+  }
+
+  .fright .images {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .fheading>h1 {
+    font-size: 5.5vw;
+  }
+
+  .fleftlem h1 {
+    font-size: 4vw;
+  }
+
+  .fleftlem h4 {
+    font-size: 2.5vw;
+  }
+
+  .fbutton button {
+    margin-top: 270px;
+    font-size: 2.5vw;
+  }
+  .dev{
+    padding: 20px;
+
+  }
+  .devtext{
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .featured {
+    padding: 10vw 6vw;
+  }
+
+  .fheading>h1 {
+    font-size: 6.5vw;
+  }
+
+  .fleftlem h1 {
+    font-size: 5vw;
+  }
+
+  .fleftlem h4 {
+    font-size: 3vw;
+  }
+
+  .fbutton button {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+  }
+
+  .devtext {
+    width: 100%;
+  }
+}
