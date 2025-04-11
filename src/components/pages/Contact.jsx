@@ -46,15 +46,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen ">
-      <div className="shadow-lg rounded-lg p-8 md:p-12 w-full max-w-lg relative border ">
+    <div className="flex items-center justify-center h-screen">
+      <div className="shadow-lg rounded-lg p-8 md:p-12 lg:w-[500px]  relative border ">
         <h1
           onClick={deleteForm}
           className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3"
         >
           x
         </h1>
-        <h1 className="text-2xl md:text-3xl font-bold text-center  text-white">
+        <h1 className="text-2xl md:text-2xl font-bold text-center  text-white">
           Contact Us
         </h1>
         <form onSubmit={onSubmit} className="space-y-6">
