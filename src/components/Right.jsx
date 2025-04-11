@@ -39,7 +39,7 @@ const Right = () => {
                     <div className="contentbx active" id='content1'>
                         <div className="card">
                             <div className="imgBx">
-                                <img className='' src="../public/images/ppic.jpeg" alt="" />
+                                <img className='' src="/images/ppic.jpeg" alt="" />
                             </div>
                             <div className="contentBx">
                                 <TypeAnimation

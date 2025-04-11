@@ -18,7 +18,7 @@ const About = () => {
           <div className="w-full md:w-1/2 text-center md:text-left">
             <div className="w-48 h-48 md:w-64 md:h-64  rounded-full mx-auto md:mx-0 overflow-hidden">
               <img
-                src="../public/images/ppic.jpeg"
+                src="/images/ppic.jpeg"
                 alt="Your Name"
                 className="w-full h-full object-cover"
               />
