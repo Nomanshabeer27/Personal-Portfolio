@@ -13,10 +13,34 @@ const Header = () => {
                     Noman <span className=''>Shabeer</span>
                 </h1>
                 <div className='hidden md:flex gap-5 md:gap-10'>
-                    <NavLink to={"/"} className='font-semibold hover:text-[#900002]/80 md:text-xl z-50'>Home</NavLink>
-                    <NavLink to={"/about"} className='font-semibold md:text-xl z-50'>About</NavLink>
-                    <NavLink to={"/contact"} className='font-semibold md:text-xl z-50'>Contact</NavLink>
-                    <NavLink to={"/skills"} className='font-semibold md:text-xl z-50'>Skills</NavLink>
+                    <NavLink
+                        to="/"
+                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                    >
+                        Home
+                    </NavLink>
+
+                    <NavLink
+                        to="/about"
+                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                    >
+                        About
+                    </NavLink>
+
+                    <NavLink
+                        to="/contact"
+                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                    >
+                        Contact
+                    </NavLink>
+
+                    <NavLink
+                        to="/skills"
+                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                    >
+                        Skills
+                    </NavLink>
+
                 </div>
                 <div className='flex  md:hidden manget-target'>
                     {
@@ -34,10 +58,34 @@ const Header = () => {
             </div>
             {togle && (
                 <div className='flex flex-col items-center   text-[18px] md:hidden'>
-                    <NavLink to="/" className='font-semibold hover:text-[#900002]/80 mb-7'>Home</NavLink>
-                    <NavLink to="/about" className='font-semibold hover:text-[#900002]/80 mb-7'>About</NavLink>
-                    <NavLink className='font-semibold hover:text-[#900002]/80 mb-8' >Contact</NavLink>
-                    <NavLink className='font-semibold hover:text-[#900002]/80 mb-8'>Skills</NavLink>
+                    <NavLink
+                        to="/"
+                        className="font-semibold mb-7 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                    >
+                        Home
+                    </NavLink>
+
+                    <NavLink
+                        to="/about"
+                        className="font-semibold mb-7 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                    >
+                        About
+                    </NavLink>
+
+                    <NavLink
+                        to="/contact"
+                        className="font-semibold mb-8 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                    >
+                        Contact
+                    </NavLink>
+
+                    <NavLink
+                        to="/skills"
+                        className="font-semibold mb-8 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                    >
+                        Skills
+                    </NavLink>
+
                 </div>
             )}
             <Main />

@@ -82,7 +82,7 @@ const skills = [
 
   {
     name: 'HTML5',
-    description: 'The standard markup language for creating web pages.',
+    description: 'The standard markup language for creating web pages and web applications.',
     icon: <FaHtml5 className="skill-icon html-icon" />,
   },
   {
@@ -97,12 +97,12 @@ const skills = [
   },
   {
     name: 'JavaScript +(ES6)',
-    description: 'A versatile programming language for web development.',
+    description: 'A versatile programming language for web development and scripting.',
     icon: <FaJsSquare className="skill-icon js-icon" />,
   },
   {
     name: 'React',
-    description: 'A JavaScript library for building user interfaces.',
+    description: 'A JavaScript library for building user interfaces.This libaray use most popular',
     icon: <FaReact className="skill-icon react-icon" />,
   },
   {
@@ -128,7 +128,7 @@ const Skill = () => {
       <div className="skills-container">
 
         <h1 className="skills-title">My Skills</h1>
-        <p>"Summarize your frontend development expertise, highlighting proficiency in HTML, CSS, JavaScript (ES6+), modern frameworks like React or Vue, responsive design, cross-browser compatibility, version control (Git), and UI/UX principles. Mention any experience with Tailwind, Bootstrap, REST APIs, or frontend testing tools like Jest or Cypress."
+        <p>"Frontend development expertise, highlighting proficiency in HTML, CSS, JavaScript (ES6+), modern frameworks like React or Vue, responsive design, cross-browser compatibility, version control (Git), and UI/UX principles. Mention any experience with Tailwind, Bootstrap, REST APIs, or frontend testing tools like Jest or Cypress."
 
         </p>
         <div className="skills-grid mt-6">
