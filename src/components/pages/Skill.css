@@ -1,0 +1,276 @@
+/* .main1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 100vh;
+  width: 100%;
+}
+.main1 h1 {
+  color: #333;
+}
+.main1 .skill {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.skillAll {
+  position: relative;
+  width: 300px;
+  height: 140px;
+  transition: 0.5s;
+}
+.skillAll:hover {
+  height: 350px;
+}
+.skillAll .html {
+  position: absolute;
+  inset: 0;
+  background: #333;
+  overflow: hidden;
+}
+.skillAll .html::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 130px;
+  background: linear-gradient(
+    transparent,
+    #61dafb,
+    #61dafb,
+    #61dafb,
+    transparent
+  );
+  animation: animate3 4s linear infinite;
+  z-index: 0;
+  animation-play-state: paused;
+}
+.skillAll .html::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #212121;
+}
+.skillAll:hover .html::before {
+  animation-play-state: running;
+}
+@keyframes animate3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.skillAll .react {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #333;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.skillAll .react::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 40px;
+  background: linear-gradient(
+    transparent,
+    #61dafb,
+    #61dafb,
+    #61dafb,
+    transparent
+  );
+  animation: animate3 4s linear infinite;
+  z-index: 0;
+  animation-play-state: paused;
+}
+.skillAll:hover .react::before {
+  animation-play-state: running;
+}
+.skillAll:hover .react {
+  top: 30px;
+}
+
+.skillAll .react::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #212121;
+}
+.skillAll .react .react1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  inset: 0;
+  color: #61dafb;
+  border-radius: 50%;
+  animation: animate1 3s linear infinite;
+  animation-play-state: paused;
+}
+
+
+.skillAll .react .react1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  inset: 0;
+  color: #61dafb;
+  border-radius: 50%;
+  animation: animate2 8s linear infinite;
+  animation-play-state: paused;
+  width: 100px;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+  padding: 10px;
+}
+.skillAll:hover .react  {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+.skillAll:hover .react .react1 {
+  opacity: 1;
+} */
+
+/*
+
+
+.skillAll .html::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #212121;
+}
+.skillAll:hover .react .react1 {
+    animation-play-state: running;
+}
+@keyframes animate2 {
+    0% {
+    transform: translate(-);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* 
+.skillAll .react .react2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  inset: 0;
+  color: #61dafb;
+  border-radius: 50%;
+  animation: animate1 3s linear infinite;
+  animation-play-state: paused;
+}
+.skillAll .react .react2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  inset: 0;
+  color: #61dafb;
+  border-radius: 50%;
+  animation-play-state: paused;
+  z-index: 1;
+  padding: 10px;
+}
+.skillAll:hover .react .react2 {
+  animation-play-state: running;
+}
+
+ */
+
+
+ .skills-container {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .skills-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  p{
+    
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .skill-card {
+    background-color:darkslategrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(99, 92, 92, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(162, 148, 148, 0.2);
+
+  }
+  
+  .skill-icon-wrapper {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+
+  }
+  
+  .skill-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .skill-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .react-icon {
+    color: #61dafb;
+  }
+  
+  .js-icon {
+    color: #f7df1e;
+  }
+  
+  .html-icon {
+    color: #e34c26;
+  }
+  
+  .css-icon {
+    color: #1572b6;
+  }

@@ -1,16 +1,12 @@
 @import "tailwindcss";
+
 * {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* background-color: gray; */
-}
-*::selection {
-  background-color: #000;
-  color: #fff;
 }
 
-body{
+body {
   cursor: default;
 }
 .heading {
@@ -37,15 +33,15 @@ body{
   padding: 10vw 12vw;
 }
 
-.fheading>h1 {
+.fheading > h1 {
   line-height: 1;
   font-size: 3.5vw;
   font-weight: 400;
 }
 
-.fheading>h1:nth-child(2) {
+.fheading > h1:nth-child(2) {
   color: transparent;
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px #fff;
 }
 
 .fcontent {
@@ -106,7 +102,7 @@ body{
 }
 
 .fbutton button {
-  padding: 1.5vw      2.5vw;
+  padding: 1.5vw 2.5vw;
   border-radius: 50px;
   border: 1px solid #e6e6e6;
   background-color: #fff;
@@ -129,7 +125,7 @@ body{
     padding: 8vw 10vw;
   }
 
-  .fheading>h1 {
+  .fheading > h1 {
     font-size: 4.5vw;
   }
 
@@ -148,7 +144,7 @@ body{
 
 @media (max-width: 768px) {
   .featured {
-    text-align: center  ;
+    text-align: center;
     margin-top: 100px;
     padding: 6vw 8vw;
   }
@@ -158,11 +154,12 @@ body{
     height: auto;
   }
 
-  .fleft, .fright {
+  .fleft,
+  .fright {
     width: 100%;
     height: auto;
   }
-  .fleftlem{
+  .fleftlem {
     display: none;
   }
 
@@ -170,7 +167,6 @@ body{
     justify-content: center;
     margin-top: 5vw;
     padding-top: 100px;
-
   }
 
   .fright .images {
@@ -178,7 +174,7 @@ body{
     height: 50vh;
   }
 
-  .fheading>h1 {
+  .fheading > h1 {
     font-size: 5.5vw;
   }
 
@@ -194,15 +190,13 @@ body{
     margin-top: 270px;
     font-size: 2.5vw;
   }
-  .dev{
+  .dev {
     padding: 20px;
-
   }
-  .devtext{
+  .devtext {
     width: 100%;
     font-size: 15px;
     padding: 20px;
-
   }
 }
 
@@ -211,7 +205,7 @@ body{
     padding: 10vw 6vw;
   }
 
-  .fheading>h1 {
+  .fheading > h1 {
     font-size: 6.5vw;
   }
 
