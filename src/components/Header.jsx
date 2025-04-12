@@ -10,33 +10,36 @@ const Header = () => {
         <>
             <div className='w-full h-20 flex justify-between items-center px-4  top-0 '>
                 <h1 className='text-xl md:text-2xl font-bold z-50'>
-                    Noman <span className=''>Shabeer</span>
+                    Noman <span className='text-red-500'>Shabeer</span>
                 </h1>
                 <div className='hidden md:flex gap-5 md:gap-10'>
-                    <NavLink
+                    <NavLink style={{ "--i": 4 }} data-text="Home"
                         to="/"
-                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                        className="span  md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         Home
                     </NavLink>
 
                     <NavLink
+                        style={{ "--i": 4 }} data-text="About"
                         to="/about"
-                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                        className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         About
                     </NavLink>
 
                     <NavLink
+                    style={{ "--i": 4 }} data-text="Contact"
                         to="/contact"
-                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                        className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         Contact
                     </NavLink>
 
                     <NavLink
+                    style={{ "--i": 4 }} data-text="Skills"
                         to="/skills"
-                        className="font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                        className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         Skills
                     </NavLink>

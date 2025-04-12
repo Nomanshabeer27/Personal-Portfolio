@@ -6,7 +6,7 @@ import Skill from "./components/pages/Skill";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter> 
         <div className="w-screen mx-auto container">
           <div className="w-full h-screen mx-auto container">
             <Routes>

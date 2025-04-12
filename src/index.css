@@ -8,12 +8,12 @@
 
 body {
   cursor: default;
+  width: 100%;
+  background-color: #1f242d;
 }
 .heading {
   display: flex;
   font-size: 65px;
-  color: transparent;
-  -webkit-text-stroke: 1px #000;
 }
 .select {
   width: 60%;
@@ -198,6 +198,16 @@ body {
     font-size: 15px;
     padding: 20px;
   }
+  .animation {
+    position: absolute;
+    width: 100%;
+    
+ 
+  }
+  .animation .bar{
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -225,4 +235,56 @@ body {
   .devtext {
     width: 100%;
   }
+
+}
+
+@keyframes show {
+  100% {
+    transform: translateY(0%);
+  }
+}
+.span {
+  font-weight: semibold;
+  font-family: "Poetsen One", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 0.2px white;
+  letter-spacing: 2px;
+  animation-delay: calc(-4s * var(--i));
+}
+@keyframes display {
+  25%,
+  100% {
+    display: none;
+  }
+}
+.span::before {
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  border-right: 1px solid white;
+  color: white;
+  overflow: hidden;
+  animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text {
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+  
+}
+@media (max-width: 768px) {
+  .headingone {
+    font-size: 32px;
+    margin-left: 80px;
+    width: 100%;
+    /* font-size: 24px; */
+  }
+  
 }

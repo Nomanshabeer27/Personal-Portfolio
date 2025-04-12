@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Left = () => {
     return (
-        <div className='container mx-auto  px-10  z-40'>
+        <div className='headingone container mx-auto  px-10  z-40'>
             <TypeAnimation
                 sequence={[
                     "I'am Noman Shabeer",
@@ -17,8 +17,8 @@ const Left = () => {
                 repeat={Infinity}
             />
             <div
-                className='heading flex flex-wrap gap-4 md:gap-6 !text-[38px] md:text-6xl lg:text-10xl font-bold tracking-tight'>
-                <h1 className='hover:text-white z-50'>Frontend</h1>
+                className='heading flex flex-wrap gap-4 md:gap-6 !text-[38px] md:text-6xl lg:text-10xl  font-bold tracking-tight'>
+                <h1 className='hover:text-black z-50'>Frontend</h1>
                 <h1 className='hover:text-black z-50'>Web</h1>
                 <h1 className='hover:text-black z-50'>Developer</h1>
             </div>
