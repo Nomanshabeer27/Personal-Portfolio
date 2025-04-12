@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <>
             <div className='w-full h-20 flex justify-between items-center px-4  top-0 '>
-                <h1 className='text-xl md:text-2xl font-bold z-50'>
-                    Noman <span className='text-red-500'>Shabeer</span>
+                <h1 className='text-white text-xl md:text-2xl font-bold z-50'>
+                    Noman <span className=''>Shabeer</span>
                 </h1>
                 <div className='hidden md:flex gap-5 md:gap-10'>
                     <NavLink style={{ "--i": 4 }} data-text="Home"

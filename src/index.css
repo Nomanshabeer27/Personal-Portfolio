@@ -279,12 +279,5 @@ body {
   }
   
 }
-@media (max-width: 768px) {
-  .headingone {
-    font-size: 32px;
-    margin-left: 80px;
-    width: 100%;
-    /* font-size: 24px; */
-  }
+
   
-}

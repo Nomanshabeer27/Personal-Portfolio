@@ -13,14 +13,14 @@ const Left = () => {
                 ]}
                 wrapper="span"
                 speed={20}
-                style={{ fontSize: '30px', display: 'inline-block', marginTop: '20px', }}
+                style={{color:"white",fontSize: '30px', display: 'inline-block', marginTop: '20px', }}
                 repeat={Infinity}
             />
             <div
-                className='heading flex flex-wrap gap-4 md:gap-6 !text-[38px] md:text-6xl lg:text-10xl  font-bold tracking-tight'>
-                <h1 className='hover:text-black z-50'>Frontend</h1>
-                <h1 className='hover:text-black z-50'>Web</h1>
-                <h1 className='hover:text-black z-50'>Developer</h1>
+                className='text-white heading flex flex-wrap gap-4 md:gap-6 !text-[38px] md:text-6xl lg:text-10xl  font-bold tracking-tight'>
+                <h1 className=''>Frontend</h1>
+                <h1 className=''>Web</h1>
+                <h1 className=''>Developer</h1>
             </div>
         </div>
     )
