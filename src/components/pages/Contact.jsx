@@ -47,70 +47,70 @@ const Contact = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-  <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border">
-    <h1
-      onClick={deleteForm}
-      className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3"
-    >
-      x
-    </h1>
-    <h1 className="text-2xl md:text-2xl font-bold text-center text-white">
-      Contact Us
-    </h1>
-    <form onSubmit={onSubmit} className="space-y-6">
-      {formError && (
-        <p className="text-red-500 text-center text-lg">{formError}</p>
-      )}
-      {result && (
-        <p className="text-green-500 text-center text-lg">{result}</p>
-      )}
-      <div>
-        <label htmlFor="name" className="block text-white font-medium mb-2">
-          Name
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-white font-medium mb-2">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-white font-medium mb-2">
-          Message
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          rows="4"
-          placeholder="Enter your message"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        ></textarea>
-      </div>
-      <div className="flex items-center justify-center">
-        <button
-          type="submit"
-          className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300"
+      <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border">
+        <h1
+          onClick={deleteForm}
+          className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3"
         >
-          Send Message
-        </button>
+          x
+        </h1>
+        <h1 className="text-2xl md:text-2xl font-bold text-center text-white">
+          Contact Us
+        </h1>
+        <form onSubmit={onSubmit} className="space-y-6">
+          {formError && (
+            <p className="text-red-500 text-center text-lg">{formError}</p>
+          )}
+          {result && (
+            <p className="text-green-500 text-center text-lg">{result}</p>
+          )}
+          <div>
+            <label htmlFor="name" className="block text-white font-medium mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-white font-medium mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-white font-medium mb-2">
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Enter your message"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <div className="flex items-center justify-center">
+            <button
+              type="submit"
+              className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</div>
+    </div>
   );
 };
 

@@ -22,7 +22,9 @@ const Left = () => {
                 <h1 className=''>Web</h1>
                 <h1 className=''>Developer</h1>
             </div>
+            
         </div>
+
     )
 }
 
