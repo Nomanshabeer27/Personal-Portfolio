@@ -45,10 +45,10 @@ const Header = () => {
                     </NavLink>
 
                 </div>
-                <div className='flex  md:hidden manget-target'>
+                <div className='flex  md:hidden manget-target text-white gap-5'>
                     {
                         togle ? (
-                            <svg onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         ) : (
@@ -60,7 +60,7 @@ const Header = () => {
                 </div>
             </div>
             {togle && (
-                <div className='flex flex-col items-center   text-[18px] md:hidden'>
+                <div className='flex flex-col items-center text-white   text-[18px] md:hidden'>
                     <NavLink
                         to="/"
                         className="font-semibold mb-7 border-b-2 border-transparent hover:border-black transition-all duration-800"
