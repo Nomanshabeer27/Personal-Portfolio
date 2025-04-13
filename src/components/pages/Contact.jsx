@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border">
+      <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border border-white">
         <h1
           onClick={deleteForm}
           className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3"
@@ -73,7 +73,7 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Enter your name"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -85,7 +85,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-white text-white  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -97,7 +97,7 @@ const Contact = () => {
               id="message"
               rows="4"
               placeholder="Enter your message"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-white text-white  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
           </div>
           <div className="flex items-center justify-center">

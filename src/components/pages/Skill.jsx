@@ -75,6 +75,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiRedux } from 'react-icons/si';
 import { IoArrowBack } from "react-icons/io5";
+import { FaSass } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 const skills = [
@@ -110,7 +111,13 @@ const skills = [
     description: "Redux is a predictable state Management for JavaScript apps.",
     icon: <SiRedux style={{ color: "purple" }} className="skill-icon react-icon" />
 
+  },
+  {
+    name: "Sass",
+    description: "Sass is a CSS preprocessor that adds features like variables, mixins, and nesting to CSS.",
+    icon: <FaSass className="skill-icon sass-icon" />
   }
+
 ];
 
 
