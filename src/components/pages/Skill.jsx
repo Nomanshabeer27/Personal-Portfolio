@@ -115,7 +115,7 @@ const skills = [
   {
     name: "Sass",
     description: "Sass is a CSS preprocessor that adds features like variables, mixins, and nesting to CSS.",
-    icon: <FaSass className="skill-icon sass-icon" />
+    icon: <FaSass style={{color:"#BA5D8A"}} className="skill-icon sass-icon" />
   }
 
 ];
