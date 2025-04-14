@@ -10,9 +10,9 @@ const Header = () => {
         <>
             <div className='w-full h-20 flex justify-between items-center px-4  top-0 '>
                 <h1 className='text-white text-xl md:text-2xl font-bold z-50'>
-                    Noman <span className=''>Shabeer</span>
+                    Noman <span className='span1'>Shabeer</span>
                 </h1>
-                <div className='hidden md:flex gap-5 md:gap-10'>
+                <div className='hidden md:flex gap-5 md:gap-6'>
                     <NavLink style={{ "--i": 4 }} data-text="Home"
                         to="/"
                         className="span  md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
@@ -42,6 +42,13 @@ const Header = () => {
                         className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         Skills
+                    </NavLink>
+                    <NavLink
+                    style={{ "--i": 4 }} data-text="Project"
+                        to="/projects"
+                        className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
+                    >
+                        Project
                     </NavLink>
 
                 </div>
