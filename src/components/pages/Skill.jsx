@@ -130,7 +130,7 @@ const Skill = () => {
   return (
 
     <>
-      <IoArrowBack onClick={handleBack} className=' arrow absolute top-10 left-4 text-[30px] text-white cursor-pointer' />
+      <IoArrowBack onClick={handleBack} className=' arrow absolute top-11 left-9 text-[30px] text-white cursor-pointer hover:text-red-400' />
 
       <div className="skills-container">
 

@@ -10,7 +10,7 @@ const About = () => {
   };
   return (
     <>
-      <IoArrowBack onClick={handleBack} className='absolute top-10 left-10 text-2xl text-white cursor-pointer' />
+      <IoArrowBack onClick={handleBack} className='absolute top-10 left-2 text-2xl text-white cursor-pointer' />
 
       <section id="about" className=" py-30 px-4">
 

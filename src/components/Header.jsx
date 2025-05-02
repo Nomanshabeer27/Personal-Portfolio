@@ -8,8 +8,8 @@ const Header = () => {
     }
     return (
         <>
-            <div className='w-full h-20 flex justify-between items-center px-4  top-0 '>
-                <h1 className='text-white text-xl md:text-2xl font-bold z-50'>
+            <div className='w-full h-20 flex justify-between items-center px-6  top-0 '>
+                <h1 className='text-white text-2xl md:text-3xl font-bold z-50'>
                     Noman <span className='span1'>Shabeer</span>
                 </h1>
                 <div className='hidden md:flex gap-5 md:gap-6'>
@@ -29,7 +29,7 @@ const Header = () => {
                     </NavLink>
 
                     <NavLink
-                    style={{ "--i": 4 }} data-text="Contact"
+                        style={{ "--i": 4 }} data-text="Contact"
                         to="/contact"
                         className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
@@ -37,14 +37,14 @@ const Header = () => {
                     </NavLink>
 
                     <NavLink
-                    style={{ "--i": 4 }} data-text="Skills"
+                        style={{ "--i": 4 }} data-text="Skills"
                         to="/skills"
                         className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
                         Skills
                     </NavLink>
                     <NavLink
-                    style={{ "--i": 4 }} data-text="Project"
+                        style={{ "--i": 4 }} data-text="Project"
                         to="/projects"
                         className="span font-semibold md:text-xl z-50 border-b-2 border-transparent hover:border-[white]/80  transition-all duration-800"
                     >
@@ -67,33 +67,49 @@ const Header = () => {
                 </div>
             </div>
             {togle && (
-                <div className='flex flex-col items-center text-white   text-[18px] md:hidden'>
+                <div className='flex flex-col items-center text-white  text-[18px] md:hidden'>
                     <NavLink
                         to="/"
-                        className="font-semibold mb-7 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                        className="font-semibold  border-b-2 border-transparent 
+                        w-full text-center py-3
+                        transition-all duration-300 hover:bg-gray-500 "
                     >
                         Home
                     </NavLink>
 
                     <NavLink
                         to="/about"
-                        className="font-semibold mb-7 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                        className="font-semibold  
+                        w-full text-center py-3
+                        transition-all duration-300 hover:bg-gray-500 "
                     >
                         About
                     </NavLink>
 
                     <NavLink
                         to="/contact"
-                        className="font-semibold mb-8 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                        className="font-semibold  
+                        w-full text-center py-3
+                        transition-all duration-300 hover:bg-gray-500 "
                     >
                         Contact
                     </NavLink>
 
                     <NavLink
                         to="/skills"
-                        className="font-semibold mb-8 border-b-2 border-transparent hover:border-black transition-all duration-800"
+                        className="font-semibold  
+                        w-full text-center py-3
+                        transition-all duration-300 hover:bg-gray-500 "
                     >
                         Skills
+                    </NavLink>
+                    <NavLink
+                        to="/projects"
+                        className="font-semibold  
+                        w-full text-center py-3
+                        transition-all duration-300 hover:bg-gray-500 "
+                    >
+                        project
                     </NavLink>
 
                 </div>

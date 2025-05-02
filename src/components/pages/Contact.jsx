@@ -47,10 +47,10 @@ const Contact = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border border-white">
+      <div className="shadow-lg rounded-lg p-8 md:p-12 w-[90%] sm:w-[300px] lg:w-[500px] relative border border-white overflow-hidden">
         <h1
           onClick={deleteForm}
-          className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3"
+          className="absolute top-0 right-0 text-2xl md:text-3xl font-bold text-white mb-4 cursor-pointer px-3 hover:bg-red-400 rounded-bl-2xl "
         >
           x
         </h1>
